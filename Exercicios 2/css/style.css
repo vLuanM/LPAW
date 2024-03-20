@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    background-color: #1A1D26;
+    width: 1366px;
+    height: 768px;
+    overflow: hidden;
+  }
+  
+/*.js{
+    background-image: url(fundo.jpg);
+}
+*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.alinha {
+    text-align: center;
+    position: relative;
+}
+
+.animate__animated.nuvem {
+    position: fixed;
+    bottom: 0;
+    left: 0%; 
+    transform: translateX(-50%);
+    animation-duration: 3s; 
+    z-index: 1; 
+    pointer-events: none;
+}
+
+.animate__animated.nave {
+    animation-duration: 5s; 
+    z-index: 2; 
+    pointer-events: none;
+}
+
+dialog{
+    z-index: 1;
+    border-color: #F83434;
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    width: 35%;
+    transform: translateX(81%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(26, 29, 38, 0.95);
+    color: white;
+    padding: 20px;
+}
+
+.botao {
+    position: fixed;
+    bottom: 30px; 
+    left: 85%;
+    transform: translateX(-50%);
+    background-color: #F83434;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    width: 200px; 
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 3; 
+}
+
+.mais{
+    border: none;
+    background-color: #F83434;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup{
+    align-items: center;
+    position: fixed;
+    bottom: 30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.seta{
+    width: 40%;
+    height: 40%;
+    pointer-events: none;
+}
+
+/********************** CANVAS ↓ *************************/
+
+canvas{
+    border-color: #F83434;
+    border: 2px solid #F83434;
+    border-radius: 15px;
+    
+}
+
+#jogo {
+    display: block;
+    margin: auto;
+}
+/*
+#jogo{
+    background-image: url(../imagens/fundo.jpg);
+}
+*/
+.voltar{
+    position: fixed;
+    bottom: 30px; 
+    left: 85%;
+    transform: translateX(-50%);
+    background-color: #F83434;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    width: 200px; 
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 3; 
+}
+
+.pontos{
+    margin: 10px;
+    position: fixed;
+    top: 15%; 
+    left: 15%;
+    transform: translateX(-50%);
+    color: #F83434;
+    pointer-events: none;
+}
+
